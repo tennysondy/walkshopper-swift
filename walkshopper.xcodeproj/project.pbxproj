@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F9B13141B8244CB00AD5CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B13131B8244CB00AD5CB0 /* AppDelegate.swift */; };
+		6F9B13191B8244CB00AD5CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9B13171B8244CB00AD5CB0 /* Main.storyboard */; };
+		6F9B131B1B8244CB00AD5CB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F9B131A1B8244CB00AD5CB0 /* Images.xcassets */; };
+		6F9B131E1B8244CB00AD5CB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F9B131C1B8244CB00AD5CB0 /* LaunchScreen.xib */; };
+		6F9B132A1B8244CB00AD5CB0 /* walkshopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B13291B8244CB00AD5CB0 /* walkshopperTests.swift */; };
+		6F9B13361B82465800AD5CB0 /* WSMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B13351B82465800AD5CB0 /* WSMineViewController.swift */; };
+		6F9B13381B8246D600AD5CB0 /* WSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B13371B8246D600AD5CB0 /* WSMainViewController.swift */; };
+		6F9B133A1B82473600AD5CB0 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9B13391B82473600AD5CB0 /* Mine.storyboard */; };
+		6F9B133C1B824D3600AD5CB0 /* WSLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B133B1B824D3600AD5CB0 /* WSLoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F9B13241B8244CB00AD5CB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F9B13061B8244CB00AD5CB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F9B130D1B8244CB00AD5CB0;
+			remoteInfo = walkshopper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F9B130E1B8244CB00AD5CB0 /* walkshopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = walkshopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F9B13121B8244CB00AD5CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F9B13131B8244CB00AD5CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F9B13181B8244CB00AD5CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F9B131A1B8244CB00AD5CB0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6F9B131D1B8244CB00AD5CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6F9B13231B8244CB00AD5CB0 /* walkshopperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = walkshopperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F9B13281B8244CB00AD5CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F9B13291B8244CB00AD5CB0 /* walkshopperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walkshopperTests.swift; sourceTree = "<group>"; };
+		6F9B13351B82465800AD5CB0 /* WSMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSMineViewController.swift; sourceTree = "<group>"; };
+		6F9B13371B8246D600AD5CB0 /* WSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSMainViewController.swift; sourceTree = "<group>"; };
+		6F9B13391B82473600AD5CB0 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
+		6F9B133B1B824D3600AD5CB0 /* WSLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSLoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F9B130B1B8244CB00AD5CB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F9B13201B8244CB00AD5CB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F9B13051B8244CB00AD5CB0 = {
+			isa = PBXGroup;
+			children = (
+				6F9B13101B8244CB00AD5CB0 /* walkshopper */,
+				6F9B13261B8244CB00AD5CB0 /* walkshopperTests */,
+				6F9B130F1B8244CB00AD5CB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F9B130F1B8244CB00AD5CB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F9B130E1B8244CB00AD5CB0 /* walkshopper.app */,
+				6F9B13231B8244CB00AD5CB0 /* walkshopperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F9B13101B8244CB00AD5CB0 /* walkshopper */ = {
+			isa = PBXGroup;
+			children = (
+				6F9B13131B8244CB00AD5CB0 /* AppDelegate.swift */,
+				6F9B13171B8244CB00AD5CB0 /* Main.storyboard */,
+				6F9B13391B82473600AD5CB0 /* Mine.storyboard */,
+				6F9B13371B8246D600AD5CB0 /* WSMainViewController.swift */,
+				6F9B13351B82465800AD5CB0 /* WSMineViewController.swift */,
+				6F9B133B1B824D3600AD5CB0 /* WSLoginViewController.swift */,
+				6F9B131A1B8244CB00AD5CB0 /* Images.xcassets */,
+				6F9B131C1B8244CB00AD5CB0 /* LaunchScreen.xib */,
+				6F9B13111B8244CB00AD5CB0 /* Supporting Files */,
+			);
+			path = walkshopper;
+			sourceTree = "<group>";
+		};
+		6F9B13111B8244CB00AD5CB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F9B13121B8244CB00AD5CB0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F9B13261B8244CB00AD5CB0 /* walkshopperTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F9B13291B8244CB00AD5CB0 /* walkshopperTests.swift */,
+				6F9B13271B8244CB00AD5CB0 /* Supporting Files */,
+			);
+			path = walkshopperTests;
+			sourceTree = "<group>";
+		};
+		6F9B13271B8244CB00AD5CB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F9B13281B8244CB00AD5CB0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F9B130D1B8244CB00AD5CB0 /* walkshopper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F9B132D1B8244CB00AD5CB0 /* Build configuration list for PBXNativeTarget "walkshopper" */;
+			buildPhases = (
+				6F9B130A1B8244CB00AD5CB0 /* Sources */,
+				6F9B130B1B8244CB00AD5CB0 /* Frameworks */,
+				6F9B130C1B8244CB00AD5CB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = walkshopper;
+			productName = walkshopper;
+			productReference = 6F9B130E1B8244CB00AD5CB0 /* walkshopper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F9B13221B8244CB00AD5CB0 /* walkshopperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F9B13301B8244CB00AD5CB0 /* Build configuration list for PBXNativeTarget "walkshopperTests" */;
+			buildPhases = (
+				6F9B131F1B8244CB00AD5CB0 /* Sources */,
+				6F9B13201B8244CB00AD5CB0 /* Frameworks */,
+				6F9B13211B8244CB00AD5CB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F9B13251B8244CB00AD5CB0 /* PBXTargetDependency */,
+			);
+			name = walkshopperTests;
+			productName = walkshopperTests;
+			productReference = 6F9B13231B8244CB00AD5CB0 /* walkshopperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F9B13061B8244CB00AD5CB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Ding Yi";
+				TargetAttributes = {
+					6F9B130D1B8244CB00AD5CB0 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					6F9B13221B8244CB00AD5CB0 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 6F9B130D1B8244CB00AD5CB0;
+					};
+				};
+			};
+			buildConfigurationList = 6F9B13091B8244CB00AD5CB0 /* Build configuration list for PBXProject "walkshopper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F9B13051B8244CB00AD5CB0;
+			productRefGroup = 6F9B130F1B8244CB00AD5CB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F9B130D1B8244CB00AD5CB0 /* walkshopper */,
+				6F9B13221B8244CB00AD5CB0 /* walkshopperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F9B130C1B8244CB00AD5CB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F9B13191B8244CB00AD5CB0 /* Main.storyboard in Resources */,
+				6F9B131E1B8244CB00AD5CB0 /* LaunchScreen.xib in Resources */,
+				6F9B131B1B8244CB00AD5CB0 /* Images.xcassets in Resources */,
+				6F9B133A1B82473600AD5CB0 /* Mine.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F9B13211B8244CB00AD5CB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F9B130A1B8244CB00AD5CB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F9B133C1B824D3600AD5CB0 /* WSLoginViewController.swift in Sources */,
+				6F9B13381B8246D600AD5CB0 /* WSMainViewController.swift in Sources */,
+				6F9B13361B82465800AD5CB0 /* WSMineViewController.swift in Sources */,
+				6F9B13141B8244CB00AD5CB0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F9B131F1B8244CB00AD5CB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F9B132A1B8244CB00AD5CB0 /* walkshopperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F9B13251B8244CB00AD5CB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F9B130D1B8244CB00AD5CB0 /* walkshopper */;
+			targetProxy = 6F9B13241B8244CB00AD5CB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F9B13171B8244CB00AD5CB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F9B13181B8244CB00AD5CB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F9B131C1B8244CB00AD5CB0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F9B131D1B8244CB00AD5CB0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F9B132B1B8244CB00AD5CB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F9B132C1B8244CB00AD5CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F9B132E1B8244CB00AD5CB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = walkshopper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6F9B132F1B8244CB00AD5CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = walkshopper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6F9B13311B8244CB00AD5CB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = walkshopperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/walkshopper.app/walkshopper";
+			};
+			name = Debug;
+		};
+		6F9B13321B8244CB00AD5CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = walkshopperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/walkshopper.app/walkshopper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F9B13091B8244CB00AD5CB0 /* Build configuration list for PBXProject "walkshopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F9B132B1B8244CB00AD5CB0 /* Debug */,
+				6F9B132C1B8244CB00AD5CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F9B132D1B8244CB00AD5CB0 /* Build configuration list for PBXNativeTarget "walkshopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F9B132E1B8244CB00AD5CB0 /* Debug */,
+				6F9B132F1B8244CB00AD5CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6F9B13301B8244CB00AD5CB0 /* Build configuration list for PBXNativeTarget "walkshopperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F9B13311B8244CB00AD5CB0 /* Debug */,
+				6F9B13321B8244CB00AD5CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F9B13061B8244CB00AD5CB0 /* Project object */;
+}
