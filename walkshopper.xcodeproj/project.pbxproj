@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		632C360A5045E271CCC2BB6B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096FB3BF85139CC2C7823305 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6F9B13141B8244CB00AD5CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B13131B8244CB00AD5CB0 /* AppDelegate.swift */; };
 		6F9B13191B8244CB00AD5CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9B13171B8244CB00AD5CB0 /* Main.storyboard */; };
 		6F9B131B1B8244CB00AD5CB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F9B131A1B8244CB00AD5CB0 /* Images.xcassets */; };
@@ -31,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		096FB3BF85139CC2C7823305 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3457D5760F3FAD773457075B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4055A0FB49A831ACBAA1695E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6F9B130E1B8244CB00AD5CB0 /* walkshopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = walkshopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F9B13121B8244CB00AD5CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F9B13131B8244CB00AD5CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632C360A5045E271CCC2BB6B /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +71,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3679B84A241E21362EF2CA15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				096FB3BF85139CC2C7823305 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6F9B13051B8244CB00AD5CB0 = {
 			isa = PBXGroup;
 			children = (
 				6F9B13101B8244CB00AD5CB0 /* walkshopper */,
 				6F9B13261B8244CB00AD5CB0 /* walkshopperTests */,
 				6F9B130F1B8244CB00AD5CB0 /* Products */,
+				9564F29FF016F4582C2B3882 /* Pods */,
+				3679B84A241E21362EF2CA15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +142,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9564F29FF016F4582C2B3882 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3457D5760F3FAD773457075B /* Pods.debug.xcconfig */,
+				4055A0FB49A831ACBAA1695E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F9B132D1B8244CB00AD5CB0 /* Build configuration list for PBXNativeTarget "walkshopper" */;
 			buildPhases = (
+				ACC3A73B3CE6F49C58C9D6BE /* Check Pods Manifest.lock */,
 				6F9B130A1B8244CB00AD5CB0 /* Sources */,
 				6F9B130B1B8244CB00AD5CB0 /* Frameworks */,
 				6F9B130C1B8244CB00AD5CB0 /* Resources */,
+				445B48C81440FBC754CEA47B /* Embed Pods Frameworks */,
+				80AF062F74923EE92BA82304 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,6 +250,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		445B48C81440FBC754CEA47B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80AF062F74923EE92BA82304 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACC3A73B3CE6F49C58C9D6BE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6F9B130A1B8244CB00AD5CB0 /* Sources */ = {
@@ -360,6 +435,7 @@
 		};
 		6F9B132E1B8244CB00AD5CB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3457D5760F3FAD773457075B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = walkshopper/Info.plist;
@@ -371,6 +447,7 @@
 		};
 		6F9B132F1B8244CB00AD5CB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4055A0FB49A831ACBAA1695E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = walkshopper/Info.plist;
