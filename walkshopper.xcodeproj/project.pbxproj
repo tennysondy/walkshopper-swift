@@ -16,6 +16,8 @@
 		6F9B13381B8246D600AD5CB0 /* WSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B13371B8246D600AD5CB0 /* WSMainViewController.swift */; };
 		6F9B133A1B82473600AD5CB0 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9B13391B82473600AD5CB0 /* Mine.storyboard */; };
 		6F9B133C1B824D3600AD5CB0 /* WSLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B133B1B824D3600AD5CB0 /* WSLoginViewController.swift */; };
+		CDC822261B835581002DDC86 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC822251B835581002DDC86 /* Login.storyboard */; };
+		CDC822281B835BC7002DDC86 /* WSVerifyPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC822271B835BC7002DDC86 /* WSVerifyPhoneNumberViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		6F9B13371B8246D600AD5CB0 /* WSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSMainViewController.swift; sourceTree = "<group>"; };
 		6F9B13391B82473600AD5CB0 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		6F9B133B1B824D3600AD5CB0 /* WSLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSLoginViewController.swift; sourceTree = "<group>"; };
+		CDC822251B835581002DDC86 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		CDC822271B835BC7002DDC86 /* WSVerifyPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSVerifyPhoneNumberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +90,11 @@
 				6F9B13131B8244CB00AD5CB0 /* AppDelegate.swift */,
 				6F9B13171B8244CB00AD5CB0 /* Main.storyboard */,
 				6F9B13391B82473600AD5CB0 /* Mine.storyboard */,
+				CDC822251B835581002DDC86 /* Login.storyboard */,
 				6F9B13371B8246D600AD5CB0 /* WSMainViewController.swift */,
 				6F9B13351B82465800AD5CB0 /* WSMineViewController.swift */,
 				6F9B133B1B824D3600AD5CB0 /* WSLoginViewController.swift */,
+				CDC822271B835BC7002DDC86 /* WSVerifyPhoneNumberViewController.swift */,
 				6F9B131A1B8244CB00AD5CB0 /* Images.xcassets */,
 				6F9B131C1B8244CB00AD5CB0 /* LaunchScreen.xib */,
 				6F9B13111B8244CB00AD5CB0 /* Supporting Files */,
@@ -204,6 +210,7 @@
 				6F9B13191B8244CB00AD5CB0 /* Main.storyboard in Resources */,
 				6F9B131E1B8244CB00AD5CB0 /* LaunchScreen.xib in Resources */,
 				6F9B131B1B8244CB00AD5CB0 /* Images.xcassets in Resources */,
+				CDC822261B835581002DDC86 /* Login.storyboard in Resources */,
 				6F9B133A1B82473600AD5CB0 /* Mine.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +233,7 @@
 				6F9B13381B8246D600AD5CB0 /* WSMainViewController.swift in Sources */,
 				6F9B13361B82465800AD5CB0 /* WSMineViewController.swift in Sources */,
 				6F9B13141B8244CB00AD5CB0 /* AppDelegate.swift in Sources */,
+				CDC822281B835BC7002DDC86 /* WSVerifyPhoneNumberViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +433,7 @@
 				6F9B132F1B8244CB00AD5CB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F9B13301B8244CB00AD5CB0 /* Build configuration list for PBXNativeTarget "walkshopperTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +442,7 @@
 				6F9B13321B8244CB00AD5CB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

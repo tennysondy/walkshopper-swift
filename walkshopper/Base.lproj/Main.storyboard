@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
@@ -33,18 +34,47 @@
                     <view key="view" contentMode="scaleToFill" id="sp0-fb-Dqh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kz5-fo-3BM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="yiG-pJ-1vy">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yiG-pJ-1vy" id="UiE-7G-85y">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Z47-Ti-xRy" id="ecA-pN-HUO"/>
+                                    <outlet property="delegate" destination="Z47-Ti-xRy" id="xI6-b0-Sew"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kz5-fo-3BM" secondAttribute="bottom" id="dh5-oX-adJ"/>
+                            <constraint firstItem="kz5-fo-3BM" firstAttribute="leading" secondItem="sp0-fb-Dqh" secondAttribute="leading" id="f5U-ZR-Axp"/>
+                            <constraint firstItem="kz5-fo-3BM" firstAttribute="trailing" secondItem="sp0-fb-Dqh" secondAttribute="trailing" id="icK-nk-ctC"/>
+                            <constraint firstItem="kz5-fo-3BM" firstAttribute="top" secondItem="sp0-fb-Dqh" secondAttribute="top" id="sFE-0F-rqj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="izg-ci-bCA"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="kz5-fo-3BM" id="0L8-Xf-XUP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="inh-ii-177" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1084" y="843"/>
         </scene>
-        <!--Item-->
+        <!--MineItem-->
         <scene sceneID="yAH-c4-wiZ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kcl-Dd-bb5" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kcl-Dd-bb5" userLabel="MineItem" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Sdd-jT-t1a"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8tK-yW-Mrf">
