@@ -17,6 +17,7 @@
 		6F9B13381B8246D600AD5CB0 /* WSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B13371B8246D600AD5CB0 /* WSMainViewController.swift */; };
 		6F9B133A1B82473600AD5CB0 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9B13391B82473600AD5CB0 /* Mine.storyboard */; };
 		6F9B133C1B824D3600AD5CB0 /* WSLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B133B1B824D3600AD5CB0 /* WSLoginViewController.swift */; };
+		6FACC5A81B83A83D003FFC0B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FACC5A71B83A83D003FFC0B /* Alamofire.framework */; };
 		CDC822261B835581002DDC86 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC822251B835581002DDC86 /* Login.storyboard */; };
 		CDC822281B835BC7002DDC86 /* WSVerifyPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC822271B835BC7002DDC86 /* WSVerifyPhoneNumberViewController.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		6F9B13371B8246D600AD5CB0 /* WSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSMainViewController.swift; sourceTree = "<group>"; };
 		6F9B13391B82473600AD5CB0 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		6F9B133B1B824D3600AD5CB0 /* WSLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSLoginViewController.swift; sourceTree = "<group>"; };
+		6FACC5A71B83A83D003FFC0B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Pods/Alamofire.framework"; sourceTree = "<group>"; };
 		CDC822251B835581002DDC86 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		CDC822271B835BC7002DDC86 /* WSVerifyPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSVerifyPhoneNumberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FACC5A81B83A83D003FFC0B /* Alamofire.framework in Frameworks */,
 				632C360A5045E271CCC2BB6B /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +77,7 @@
 		3679B84A241E21362EF2CA15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6FACC5A71B83A83D003FFC0B /* Alamofire.framework */,
 				096FB3BF85139CC2C7823305 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -438,6 +442,10 @@
 			baseConfigurationReference = 3457D5760F3FAD773457075B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
+				);
 				INFOPLIST_FILE = walkshopper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -450,6 +458,10 @@
 			baseConfigurationReference = 4055A0FB49A831ACBAA1695E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
+				);
 				INFOPLIST_FILE = walkshopper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
