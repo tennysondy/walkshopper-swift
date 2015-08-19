@@ -14,7 +14,7 @@ class WSMineViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tableView.tableFooterView = UIView.new();
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -25,10 +25,13 @@ class WSMineViewController: UIViewController, UITableViewDataSource, UITableView
         return 1;
     }
     
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10.0;
+    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("foo", forIndexPath: indexPath) as! UITableViewCell
-        
+        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        cell.textLabel?.text = "测试行";
         return cell
     }
 }

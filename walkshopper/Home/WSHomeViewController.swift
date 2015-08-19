@@ -1,17 +1,17 @@
 //
-//  WSMainViewController.swift
+//  WSHomeViewController.swift
 //  walkshopper
 //
-//  Created by 丁 一 on 15/8/18.
+//  Created by Ding Yi on 15/8/19.
 //  Copyright (c) 2015年 Ding Yi. All rights reserved.
 //
 
 import UIKit
 
-class WSMainViewController: UITabBarController {
+class WSHomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "首页";
     }
-
 }

@@ -17,13 +17,14 @@ class WSLoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "登录";
         self.loginBtn .addTarget(self, action: "login", forControlEvents: UIControlEvents.TouchUpInside);
 
     }
     
     func login()
     {
-        
+       println("登录")
     }
     
 }
