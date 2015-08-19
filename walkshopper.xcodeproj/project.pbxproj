@@ -21,6 +21,7 @@
 		CD2888F31B842897007B1AEC /* WSLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2888EE1B842897007B1AEC /* WSLoginViewController.swift */; };
 		CD2888F41B842897007B1AEC /* WSMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2888EF1B842897007B1AEC /* WSMineViewController.swift */; };
 		CD2888F51B842897007B1AEC /* WSVerifyPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2888F01B842897007B1AEC /* WSVerifyPhoneNumberViewController.swift */; };
+		CD2888FA1B8491AF007B1AEC /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2888F91B8491AF007B1AEC /* UserSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		CD2888EE1B842897007B1AEC /* WSLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSLoginViewController.swift; sourceTree = "<group>"; };
 		CD2888EF1B842897007B1AEC /* WSMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSMineViewController.swift; sourceTree = "<group>"; };
 		CD2888F01B842897007B1AEC /* WSVerifyPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSVerifyPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		CD2888F91B8491AF007B1AEC /* UserSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				CD2888E81B84288F007B1AEC /* Main */,
 				CD2888E51B84287E007B1AEC /* Home */,
 				CD2888EB1B842897007B1AEC /* Mine */,
+				CD2888F81B8491AF007B1AEC /* UserSession */,
 				6F9B131A1B8244CB00AD5CB0 /* Images.xcassets */,
 				6F9B131C1B8244CB00AD5CB0 /* LaunchScreen.xib */,
 				6F9B13111B8244CB00AD5CB0 /* Supporting Files */,
@@ -180,6 +183,14 @@
 				CD2888F01B842897007B1AEC /* WSVerifyPhoneNumberViewController.swift */,
 			);
 			path = Mine;
+			sourceTree = "<group>";
+		};
+		CD2888F81B8491AF007B1AEC /* UserSession */ = {
+			isa = PBXGroup;
+			children = (
+				CD2888F91B8491AF007B1AEC /* UserSession.swift */,
+			);
+			path = UserSession;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +349,7 @@
 				CD2888F41B842897007B1AEC /* WSMineViewController.swift in Sources */,
 				CD2888F31B842897007B1AEC /* WSLoginViewController.swift in Sources */,
 				CD2888EA1B84288F007B1AEC /* WSMainViewController.swift in Sources */,
+				CD2888FA1B8491AF007B1AEC /* UserSession.swift in Sources */,
 				6F9B13141B8244CB00AD5CB0 /* AppDelegate.swift in Sources */,
 				CD2888E71B84287E007B1AEC /* WSHomeViewController.swift in Sources */,
 				CD2888F51B842897007B1AEC /* WSVerifyPhoneNumberViewController.swift in Sources */,
