@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -196,7 +196,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩余60秒" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqn-xa-Mxp">
                                         <rect key="frame" x="509" y="56" width="71" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XiR-cP-MZ2" userLabel="TopLine">
@@ -281,10 +281,10 @@
                     </view>
                     <connections>
                         <outlet property="countDownLabel" destination="zqn-xa-Mxp" id="Wk8-Tm-BR9"/>
-                        <outlet property="getVerifiedNumBtn" destination="MeP-yl-lN5" id="Lc1-MW-mxO"/>
-                        <outlet property="nextStep" destination="7Fd-Wc-lhg" id="yFl-K5-cma"/>
+                        <outlet property="getVerificationCodeBtn" destination="MeP-yl-lN5" id="siR-U5-Go3"/>
+                        <outlet property="nextStepBtn" destination="7Fd-Wc-lhg" id="xvP-9M-3XE"/>
                         <outlet property="phoneNumberTextField" destination="HNQ-xz-tIe" id="A0x-ym-n8U"/>
-                        <outlet property="verifiedNumTextField" destination="hgz-8p-lF9" id="bcb-ue-LZf"/>
+                        <outlet property="verificationCodeTextField" destination="hgz-8p-lF9" id="gc1-aZ-ZVJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xdo-v8-vgm" userLabel="First Responder" sceneMemberID="firstResponder"/>

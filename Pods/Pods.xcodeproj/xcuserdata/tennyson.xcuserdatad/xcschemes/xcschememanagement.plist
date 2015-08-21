@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-JLRoutes.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6D1BA597466D861B8A427A3B</key>
+		<key>41B0FC9E225CEEE6CBCC8B2E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BA43E2FF32ACE4094F86A81D</key>
+		<key>462C1616B687A6AC2964E975</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>957925851F6F8C7B9E1DAA0F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
