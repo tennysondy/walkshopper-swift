@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        SMS_SDK.registerApp("9cfb8e7d0120", withSecret: "c3d1ff0fd893b2f14ded0cba9876a18d")
+        
         return true
     }
 

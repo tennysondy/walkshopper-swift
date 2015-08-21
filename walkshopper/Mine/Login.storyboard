@@ -118,7 +118,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4F6-Xc-OTE" kind="show" id="GQv-fC-5DA"/>
+                                    <segue destination="4F6-Xc-OTE" kind="show" id="yhR-98-p1c"/>
                                 </connections>
                             </button>
                         </subviews>

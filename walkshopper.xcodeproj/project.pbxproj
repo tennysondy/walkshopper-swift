@@ -22,6 +22,11 @@
 		CD2888F41B842897007B1AEC /* WSMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2888EF1B842897007B1AEC /* WSMineViewController.swift */; };
 		CD2888F51B842897007B1AEC /* WSVerifyPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2888F01B842897007B1AEC /* WSVerifyPhoneNumberViewController.swift */; };
 		CD2888FA1B8491AF007B1AEC /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2888F91B8491AF007B1AEC /* UserSession.swift */; };
+		CD2889011B870E06007B1AEC /* SMS_SDKLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD2888FD1B870E06007B1AEC /* SMS_SDKLocalizable.strings */; };
+		CD2889021B870E06007B1AEC /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2888FF1B870E06007B1AEC /* SMS_SDK.framework */; };
+		CD2889041B870E90007B1AEC /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2889031B870E90007B1AEC /* libicucore.dylib */; };
+		CD2889061B870EA8007B1AEC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2889051B870EA8007B1AEC /* libz.dylib */; };
+		CD2889081B870EB7007B1AEC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2889071B870EB7007B1AEC /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,13 @@
 		CD2888EF1B842897007B1AEC /* WSMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSMineViewController.swift; sourceTree = "<group>"; };
 		CD2888F01B842897007B1AEC /* WSVerifyPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSVerifyPhoneNumberViewController.swift; sourceTree = "<group>"; };
 		CD2888F91B8491AF007B1AEC /* UserSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		CD2888FE1B870E06007B1AEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SMS_SDKLocalizable.strings; sourceTree = "<group>"; };
+		CD2888FF1B870E06007B1AEC /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
+		CD2889001B870E06007B1AEC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SMS_SDKLocalizable.strings"; sourceTree = "<group>"; };
+		CD2889031B870E90007B1AEC /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		CD2889051B870EA8007B1AEC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CD2889071B870EB7007B1AEC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		CD2889091B8715CC007B1AEC /* walkshopper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "walkshopper-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2889081B870EB7007B1AEC /* MessageUI.framework in Frameworks */,
+				CD2889061B870EA8007B1AEC /* libz.dylib in Frameworks */,
+				CD2889041B870E90007B1AEC /* libicucore.dylib in Frameworks */,
+				CD2889021B870E06007B1AEC /* SMS_SDK.framework in Frameworks */,
 				6FACC5A81B83A83D003FFC0B /* Alamofire.framework in Frameworks */,
 				632C360A5045E271CCC2BB6B /* Pods.framework in Frameworks */,
 			);
@@ -81,6 +97,9 @@
 		3679B84A241E21362EF2CA15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD2889071B870EB7007B1AEC /* MessageUI.framework */,
+				CD2889051B870EA8007B1AEC /* libz.dylib */,
+				CD2889031B870E90007B1AEC /* libicucore.dylib */,
 				6FACC5A71B83A83D003FFC0B /* Alamofire.framework */,
 				096FB3BF85139CC2C7823305 /* Pods.framework */,
 			);
@@ -110,12 +129,14 @@
 		6F9B13101B8244CB00AD5CB0 /* walkshopper */ = {
 			isa = PBXGroup;
 			children = (
+				CD2889091B8715CC007B1AEC /* walkshopper-Bridging-Header.h */,
 				6F9B13131B8244CB00AD5CB0 /* AppDelegate.swift */,
 				6F9B13171B8244CB00AD5CB0 /* Main.storyboard */,
 				CD2888E81B84288F007B1AEC /* Main */,
 				CD2888E51B84287E007B1AEC /* Home */,
 				CD2888EB1B842897007B1AEC /* Mine */,
 				CD2888F81B8491AF007B1AEC /* UserSession */,
+				CD2888FB1B870E06007B1AEC /* commnSDK */,
 				6F9B131A1B8244CB00AD5CB0 /* Images.xcassets */,
 				6F9B131C1B8244CB00AD5CB0 /* LaunchScreen.xib */,
 				6F9B13111B8244CB00AD5CB0 /* Supporting Files */,
@@ -193,6 +214,23 @@
 			path = UserSession;
 			sourceTree = "<group>";
 		};
+		CD2888FB1B870E06007B1AEC /* commnSDK */ = {
+			isa = PBXGroup;
+			children = (
+				CD2888FC1B870E06007B1AEC /* SMS_SDK */,
+			);
+			path = commnSDK;
+			sourceTree = "<group>";
+		};
+		CD2888FC1B870E06007B1AEC /* SMS_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				CD2888FD1B870E06007B1AEC /* SMS_SDKLocalizable.strings */,
+				CD2888FF1B870E06007B1AEC /* SMS_SDK.framework */,
+			);
+			path = SMS_SDK;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -259,6 +297,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 6F9B13051B8244CB00AD5CB0;
 			productRefGroup = 6F9B130F1B8244CB00AD5CB0 /* Products */;
@@ -280,6 +319,7 @@
 				6F9B13191B8244CB00AD5CB0 /* Main.storyboard in Resources */,
 				CD2888F21B842897007B1AEC /* Mine.storyboard in Resources */,
 				6F9B131E1B8244CB00AD5CB0 /* LaunchScreen.xib in Resources */,
+				CD2889011B870E06007B1AEC /* SMS_SDKLocalizable.strings in Resources */,
 				6F9B131B1B8244CB00AD5CB0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +431,15 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
+		CD2888FD1B870E06007B1AEC /* SMS_SDKLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD2888FE1B870E06007B1AEC /* en */,
+				CD2889001B870E06007B1AEC /* zh-Hans */,
+			);
+			name = SMS_SDKLocalizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -482,14 +531,18 @@
 			baseConfigurationReference = 3457D5760F3FAD773457075B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
+					"$(PROJECT_DIR)/walkshopper/commnSDK/SMS_SDK",
 				);
 				INFOPLIST_FILE = walkshopper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "walkshopper/walkshopper-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -498,14 +551,17 @@
 			baseConfigurationReference = 4055A0FB49A831ACBAA1695E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
+					"$(PROJECT_DIR)/walkshopper/commnSDK/SMS_SDK",
 				);
 				INFOPLIST_FILE = walkshopper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "walkshopper/walkshopper-Bridging-Header.h";
 			};
 			name = Release;
 		};
