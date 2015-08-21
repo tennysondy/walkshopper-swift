@@ -193,6 +193,12 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩余60秒" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqn-xa-Mxp">
+                                        <rect key="frame" x="509" y="56" width="71" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XiR-cP-MZ2" userLabel="TopLine">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="0.0"/>
                                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -219,6 +225,7 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="LM4-wh-gL7" secondAttribute="bottom" id="0Ht-C3-abm"/>
                                     <constraint firstItem="hgz-8p-lF9" firstAttribute="leading" secondItem="GHk-uy-9U6" secondAttribute="trailing" constant="20" id="11t-rG-5ip"/>
+                                    <constraint firstItem="MeP-yl-lN5" firstAttribute="centerY" secondItem="zqn-xa-Mxp" secondAttribute="centerY" id="4mY-eG-jJX"/>
                                     <constraint firstAttribute="height" constant="88" id="5C6-cY-cVt"/>
                                     <constraint firstItem="QMu-tA-q2v" firstAttribute="leading" secondItem="AW3-be-n1s" secondAttribute="leading" constant="24" id="5hx-6t-mKR"/>
                                     <constraint firstItem="XiR-cP-MZ2" firstAttribute="top" secondItem="AW3-be-n1s" secondAttribute="top" id="6SM-0a-xAd"/>
@@ -230,6 +237,7 @@
                                     <constraint firstItem="GHk-uy-9U6" firstAttribute="height" secondItem="QMu-tA-q2v" secondAttribute="height" id="BNv-qY-Wxr"/>
                                     <constraint firstAttribute="trailing" secondItem="MeP-yl-lN5" secondAttribute="trailing" constant="13" id="Em9-LV-gSz"/>
                                     <constraint firstItem="QMu-tA-q2v" firstAttribute="top" secondItem="AW3-be-n1s" secondAttribute="top" id="Eqa-lA-QBb"/>
+                                    <constraint firstItem="MeP-yl-lN5" firstAttribute="centerX" secondItem="zqn-xa-Mxp" secondAttribute="centerX" id="GFO-MR-cNP"/>
                                     <constraint firstItem="GHk-uy-9U6" firstAttribute="top" secondItem="QMu-tA-q2v" secondAttribute="bottom" id="Na0-lP-RwJ"/>
                                     <constraint firstItem="GHk-uy-9U6" firstAttribute="centerY" secondItem="hgz-8p-lF9" secondAttribute="centerY" id="NbY-rK-u8u"/>
                                     <constraint firstItem="HNQ-xz-tIe" firstAttribute="leading" secondItem="QMu-tA-q2v" secondAttribute="trailing" constant="20" id="RN8-Jw-LaH"/>
@@ -272,6 +280,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="countDownLabel" destination="zqn-xa-Mxp" id="Wk8-Tm-BR9"/>
                         <outlet property="getVerifiedNumBtn" destination="MeP-yl-lN5" id="Lc1-MW-mxO"/>
                         <outlet property="nextStep" destination="7Fd-Wc-lhg" id="yFl-K5-cma"/>
                         <outlet property="phoneNumberTextField" destination="HNQ-xz-tIe" id="A0x-ym-n8U"/>

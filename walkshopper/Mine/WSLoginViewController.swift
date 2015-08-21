@@ -25,7 +25,6 @@ class WSLoginViewController: UIViewController {
         backBtn.addTarget(self, action: "backBtnTapped", forControlEvents: .TouchUpInside)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backBtn)
         self.loginBtn .addTarget(self, action: "login", forControlEvents: .TouchUpInside);
-        self.registerBtn.addTarget(self, action: "register", forControlEvents: .TouchUpInside)
     }
     
     func backBtnTapped()
