@@ -15,5 +15,6 @@ class UserSession: NSObject {
         return _sharedInstance
     }
     
-    var isLogin = true
+    var isLogin = false
+    
 }

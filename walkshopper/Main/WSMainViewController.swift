@@ -12,18 +12,22 @@ class WSMainViewController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "买卖";
-        self.delegate = self;
+        self.delegate = self
         
     }
-
-    func tabBarController(tabBarController: UITabBarController, didSelectViewController viewController: UIViewController) {
+    
+    func tabBarController(tabBarController: UITabBarController, shouldSelectViewController viewController: UIViewController) -> Bool {
         var nav : UINavigationController = viewController as! UINavigationController;
         if nav.viewControllers.first!.isKindOfClass(WSMineViewController) {
-            let storyboard = UIStoryboard(name: "Login", bundle: nil);
-            var loginVC = storyboard.instantiateViewControllerWithIdentifier("WSLoginViewController") as! WSLoginViewController
-            nav = UINavigationController(rootViewController: loginVC);
-            self.presentViewController(nav, animated: true, completion: nil);
+            if UserSession.sharedInstance.isLogin == false {
+                let storyboard = UIStoryboard(name: "Login", bundle: nil)
+                var loginVC = storyboard.instantiateViewControllerWithIdentifier("WSLoginViewController") as! WSLoginViewController
+                nav = UINavigationController(rootViewController: loginVC)
+                self.presentViewController(nav, animated: true, completion: nil)
+                return false
+            }
         }
+        return true
     }
+    
 }

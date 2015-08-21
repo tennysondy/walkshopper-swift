@@ -18,13 +18,25 @@ class WSLoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "登录";
-        self.loginBtn .addTarget(self, action: "login", forControlEvents: UIControlEvents.TouchUpInside);
+        var backBtn : UIButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
+        backBtn.frame = CGRectMake(0, 0, 40, 40)
+        backBtn.setTitle("返回", forState: .Normal)
+        backBtn.setTitleColor(UIColor.blueColor(), forState: .Normal)
+        backBtn.addTarget(self, action: "backBtnTapped", forControlEvents: .TouchUpInside)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backBtn)
+        self.loginBtn .addTarget(self, action: "login", forControlEvents: .TouchUpInside);
 
+    }
+    
+    func backBtnTapped()
+    {
+        self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func login()
     {
        println("登录")
     }
+    
     
 }
