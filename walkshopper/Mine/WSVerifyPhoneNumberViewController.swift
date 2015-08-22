@@ -25,7 +25,6 @@ class WSVerifyPhoneNumberViewController: UIViewController {
         self.getVerificationCodeBtn.addTarget(self, action: "getVerificationCode", forControlEvents: UIControlEvents.TouchUpInside)
         self.nextStepBtn.addTarget(self, action: "nextStep", forControlEvents: UIControlEvents.TouchUpInside)
         self.countDownLabel.hidden = true
-        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -85,7 +84,6 @@ class WSVerifyPhoneNumberViewController: UIViewController {
 //MARK: Phone number & verification code validation
     func isPhoneNumValid() -> Bool
     {
-        println(count(self.phoneNumberTextField.text))
         if count(self.phoneNumberTextField.text) == 0 {
             var alertView = UIAlertView(title: nil, message: "请输入手机号", delegate: nil, cancelButtonTitle: "确定")
             alertView.show()
@@ -105,7 +103,7 @@ class WSVerifyPhoneNumberViewController: UIViewController {
     {
         var rule = "^\\d{4}"
         var pred = NSPredicate(format: "SELF MATCHES %@", rule) as NSPredicate
-        var isMatch = pred.evaluateWithObject(self.phoneNumberTextField.text)
+        var isMatch = pred.evaluateWithObject(self.verificationCodeTextField.text)
         if isMatch == false {
             var alertView = UIAlertView(title: nil, message: "验证码错误，请重新输入", delegate: nil, cancelButtonTitle: "确定")
             alertView.show()

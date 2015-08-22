@@ -10,6 +10,10 @@ import UIKit
 
 class WSMainViewController: UITabBarController, UITabBarControllerDelegate {
 
+    class func registerRoutes() {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
