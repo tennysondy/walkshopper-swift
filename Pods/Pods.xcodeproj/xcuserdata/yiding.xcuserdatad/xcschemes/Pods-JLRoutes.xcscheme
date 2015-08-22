@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "462C1616B687A6AC2964E975"
-               BuildableName = "Alamofire.framework"
-               BlueprintName = "Pods-Alamofire"
+               BlueprintIdentifier = "957925851F6F8C7B9E1DAA0F"
+               BuildableName = "JLRoutes.framework"
+               BlueprintName = "Pods-JLRoutes"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -39,6 +39,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "957925851F6F8C7B9E1DAA0F"
+            BuildableName = "JLRoutes.framework"
+            BlueprintName = "Pods-JLRoutes"
+            ReferencedContainer = "container:Pods.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -48,6 +57,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "957925851F6F8C7B9E1DAA0F"
+            BuildableName = "JLRoutes.framework"
+            BlueprintName = "Pods-JLRoutes"
+            ReferencedContainer = "container:Pods.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
