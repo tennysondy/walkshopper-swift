@@ -34,7 +34,8 @@ class WSLoginViewController: UIViewController {
     
     func login()
     {
-       print("登录")
+        var url = NSURL(string: "walkshopper://user/view/joeldev")
+        UIApplication.sharedApplication().openURL(url!)
     }
     
 }
