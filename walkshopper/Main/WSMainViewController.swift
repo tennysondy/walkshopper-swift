@@ -21,7 +21,7 @@ class WSMainViewController: UITabBarController, UITabBarControllerDelegate {
         if nav.viewControllers.first!.isKindOfClass(WSMineViewController) {
             if UserSession.sharedInstance.isLogin == false {
                 let storyboard = UIStoryboard(name: "Login", bundle: nil)
-                var loginVC = storyboard.instantiateViewControllerWithIdentifier("WSLoginViewController") as! WSLoginViewController
+                let loginVC = storyboard.instantiateViewControllerWithIdentifier("WSLoginViewController") as! WSLoginViewController
                 nav = UINavigationController(rootViewController: loginVC)
                 self.presentViewController(nav, animated: true, completion: nil)
                 return false

@@ -18,7 +18,7 @@ class WSLoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "登录";
-        var backBtn : UIButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
+        let backBtn : UIButton = UIButton(type: UIButtonType.Custom)
         backBtn.frame = CGRectMake(0, 0, 40, 40)
         backBtn.setTitle("返回", forState: .Normal)
         backBtn.setTitleColor(UIColor.blueColor(), forState: .Normal)
@@ -34,7 +34,7 @@ class WSLoginViewController: UIViewController {
     
     func login()
     {
-       println("登录")
+       print("登录")
     }
     
 }

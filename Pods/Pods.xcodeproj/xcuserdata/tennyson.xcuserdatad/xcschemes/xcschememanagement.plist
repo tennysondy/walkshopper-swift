@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Alamofire.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-JLRoutes.xcscheme</key>
+		<key>JLRoutes.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>41B0FC9E225CEEE6CBCC8B2E</key>
+		<key>434C8A1FA02495B8174956EDEEE459FD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>462C1616B687A6AC2964E975</key>
+		<key>DF10F81B9F264968EB89E86C826638DA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>957925851F6F8C7B9E1DAA0F</key>
+		<key>EF43747D9066B2236F63AAD1EFF6B6DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

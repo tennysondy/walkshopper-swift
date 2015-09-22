@@ -46,8 +46,8 @@ class WSVerifyPhoneNumberViewController: UIViewController {
         self.getVerificationCodeBtn.hidden = true
         SMS_SDK.getVerificationCodeBySMSWithPhone(self.phoneNumberTextField.text, zone: "86") { (error : SMS_SDKError?) -> Void in
             if let e = error {
-                var alertView = UIAlertView(title: nil, message: e.description, delegate: nil, cancelButtonTitle: "确定")
-                alertView.show()
+//                var alertView = UIAlertView(title: nil, message: e.description, delegate: nil, cancelButtonTitle: "确定")
+//                alertView.show()
             } else {
                 
             }
@@ -72,11 +72,11 @@ class WSVerifyPhoneNumberViewController: UIViewController {
         }
         
         SMS_SDK.commitVerifyCode(self.verificationCodeTextField.text, result: { (state : SMS_ResponseState) -> Void in
-            switch state.value {
-            case SMS_ResponseStateSuccess.value:
-                println("注册成功")
+            switch state.rawValue {
+            case SMS_ResponseStateSuccess.rawValue:
+                print("注册成功")
             default:
-                var alertView = UIAlertView(title: nil, message: "请输入手机号", delegate: nil, cancelButtonTitle: "确定")
+                let alertView = UIAlertView(title: nil, message: "请输入手机号", delegate: nil, cancelButtonTitle: "确定")
                 alertView.show()
             }
         })
@@ -85,8 +85,8 @@ class WSVerifyPhoneNumberViewController: UIViewController {
 //MARK: Phone number & verification code validation
     func isPhoneNumValid() -> Bool
     {
-        println(count(self.phoneNumberTextField.text))
-        if count(self.phoneNumberTextField.text) == 0 {
+        print(self.phoneNumberTextField.text!.characters.count)
+        if self.phoneNumberTextField.text!.characters.count == 0 {
             var alertView = UIAlertView(title: nil, message: "请输入手机号", delegate: nil, cancelButtonTitle: "确定")
             alertView.show()
             return false
@@ -103,11 +103,11 @@ class WSVerifyPhoneNumberViewController: UIViewController {
     
     func isVerificationCodeValid() -> Bool
     {
-        var rule = "^\\d{4}"
-        var pred = NSPredicate(format: "SELF MATCHES %@", rule) as NSPredicate
-        var isMatch = pred.evaluateWithObject(self.phoneNumberTextField.text)
+        let rule = "^\\d{4}"
+        let pred = NSPredicate(format: "SELF MATCHES %@", rule) as NSPredicate
+        let isMatch = pred.evaluateWithObject(self.phoneNumberTextField.text)
         if isMatch == false {
-            var alertView = UIAlertView(title: nil, message: "验证码错误，请重新输入", delegate: nil, cancelButtonTitle: "确定")
+            let alertView = UIAlertView(title: nil, message: "验证码错误，请重新输入", delegate: nil, cancelButtonTitle: "确定")
             alertView.show()
         }
         

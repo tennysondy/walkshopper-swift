@@ -4,7 +4,7 @@ JLRoutes
 ### What is it? ###
 JLRoutes is advanced URL parsing with a block-based callback API. It is designed to make it very easy to handle complex URL schemes in your application without having to do any URL or string parsing of any kind.
 
-[More information on how to register custom URL schemes in your application's Info.plist.](http://developer.apple.com/library/ios/documentation/iphone/conceptual/iphoneosprogrammingguide/AdvancedAppTricks/AdvancedAppTricks.html#//apple_ref/doc/uid/TP40007072-CH7-SW50)
+[More information on how to register custom URL schemes in your application's Info.plist.](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW2)
 
 ### Features ###
 * Simple API with minimal impact to existing codebases
@@ -17,6 +17,14 @@ JLRoutes is advanced URL parsing with a block-based callback API. It is designed
 * Optional verbose logging
 * Pretty-print the whole routing table
 * No dependencies other than Foundation
+
+### Installation ###
+JLRoutes is available for installation via CocoaPods.
+
+### Requirements ###
+* ARC
+* iOS 5.0+ or OS X 10.7+
+* Foundation.framework
 
 ### Simple Example ###
 ```objc
@@ -167,17 +175,9 @@ For example, the following route would be triggerd for any URL that started with
 }];
 ```
 
-### Installation ###
-JLRoutes is available for installation via CocoaPods.
-
-### Requirements ###
-* ARC
-* iOS 5.0+ or OS X 10.7+
-* Foundation.framework
-
 ### License ###
 BSD 3-Clause License:
-> Copyright (c) 2013, Joel Levin. All rights reserved.
+> Copyright (c) 2015, Joel Levin. All rights reserved.
  
 > Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
  

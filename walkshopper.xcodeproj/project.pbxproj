@@ -278,6 +278,8 @@
 		6F9B13061B8244CB00AD5CB0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Ding Yi";
 				TargetAttributes = {
