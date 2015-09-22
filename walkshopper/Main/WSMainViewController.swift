@@ -7,11 +7,22 @@
 //
 
 import UIKit
+import JLRoutes
 
 class WSMainViewController: UITabBarController, UITabBarControllerDelegate {
 
+    class func registerRoutes() {
+        //[NSObject : AnyObject]!
+        JLRoutes.addRoute("/user/view/:userID", handler: { (parameters) -> Bool in
+            println(parameters)
+            return true
+        })
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        WSMainViewController.registerRoutes()
         self.delegate = self
         
     }

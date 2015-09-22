@@ -25,7 +25,6 @@ class WSVerifyPhoneNumberViewController: UIViewController {
         self.getVerificationCodeBtn.addTarget(self, action: "getVerificationCode", forControlEvents: UIControlEvents.TouchUpInside)
         self.nextStepBtn.addTarget(self, action: "nextStep", forControlEvents: UIControlEvents.TouchUpInside)
         self.countDownLabel.hidden = true
-        
     }
     
     override func viewWillAppear(animated: Bool) {

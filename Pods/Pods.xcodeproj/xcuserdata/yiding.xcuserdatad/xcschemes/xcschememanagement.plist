@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>Pods-JLRoutes.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,7 +22,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>41B0FC9E225CEEE6CBCC8B2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>462C1616B687A6AC2964E975</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6D1BA597466D861B8A427A3B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>957925851F6F8C7B9E1DAA0F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

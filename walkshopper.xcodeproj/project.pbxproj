@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		632C360A5045E271CCC2BB6B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096FB3BF85139CC2C7823305 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		632C360A5045E271CCC2BB6B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096FB3BF85139CC2C7823305 /* Pods.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		6F9B13141B8244CB00AD5CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B13131B8244CB00AD5CB0 /* AppDelegate.swift */; };
 		6F9B13191B8244CB00AD5CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9B13171B8244CB00AD5CB0 /* Main.storyboard */; };
 		6F9B131B1B8244CB00AD5CB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F9B131A1B8244CB00AD5CB0 /* Images.xcassets */; };
@@ -539,6 +539,8 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
 					"$(PROJECT_DIR)/walkshopper/commnSDK/SMS_SDK",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = walkshopper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -559,6 +561,8 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
 					"$(PROJECT_DIR)/walkshopper/commnSDK/SMS_SDK",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = walkshopper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
